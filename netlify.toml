@@ -1,0 +1,3 @@
+[build]
+  command = "ts-node scripts/fetch-menu.ts && nuxt build"
+  publish = "dist"
