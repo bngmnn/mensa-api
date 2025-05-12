@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 export default defineEventHandler(async (event) => {
-    const filePath = path.resolve('./static/menu.json');
+    const filePath = path.resolve('./menu.json');
 
     try {
         const jsonData = fs.readFileSync(filePath, 'utf-8');

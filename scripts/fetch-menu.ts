@@ -74,7 +74,7 @@ async function fetchMenu() {
         });
 
         // Write the menu to a JSON file
-        const outputPath = path.resolve('./static/menu.json');
+        const outputPath = path.resolve('./menu.json');
         fs.writeFileSync(outputPath, JSON.stringify({ menu }, null, 2));
         console.log("Menu data updated successfully.");
     } catch (error) {
