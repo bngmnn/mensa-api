@@ -81,9 +81,8 @@ async function fetchMenu() {
         console.error("Error fetching menu:", error);
     }
 }
-
-// Execute fetchMenu when the script runs directly
-if (require.main === module) {
+// Execute fetchMenu if this file is being executed directly
+if (import.meta.url === 'file://' + path.resolve('./scripts/fetch-menu.ts')) {
     fetchMenu().catch(console.error);
 }
 
